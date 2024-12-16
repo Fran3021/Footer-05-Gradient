@@ -1,0 +1,48 @@
+.aside-principal{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-image: linear-gradient(to right,#FC00FF 0%, #00DBDE 100%);
+    padding-top: 40px;
+    padding-bottom: 43px;
+    border-radius: 10px;
+    .container-aside{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-aside{
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            h3{
+                font-size: 26px;
+                font-weight: bold;
+            }
+            ul{
+                display: flex;
+                gap: 24px;
+                li{
+                    display: flex;
+                    gap: 8px;
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+            }
+        }
+        .right-aside{
+            display: flex;
+            gap: 24px;
+            .button-black{
+                @include button-black;
+            }
+            .button-white{
+                @include button-white;
+            }
+        }
+    }
+    
+}
